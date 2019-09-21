@@ -8,21 +8,23 @@ public class MyFirstProgram {
 
     Square s = new Square(6);
 
-    System.out.println("Площадь квадрата со стороной "+s.l+" равна "+aria(s));
+    System.out.println("Площадь квадрата со стороной "+s.l+" равна "+s.area());
 
     Rectangle r = new Rectangle(4,6);
 
-    System.out.println("Площадь квадрата со сторонами "+r.a+" и "+r.b+" равна "+aria(r));
+    System.out.println("Площадь квадрата со сторонами "+r.a+" и "+r.b+" равна "+r.aria());
+
+
 
   }
     public static void hello (String samebody) {
       System.out.println("Hello, "+samebody+"!");
     }
-    public static double aria (Square s){
-    return s.l*s.l;
-    }
-    public static double aria (Rectangle r){
-    return r.a*r.b;
-    }
+
+
+
+
+
+
 
 }
