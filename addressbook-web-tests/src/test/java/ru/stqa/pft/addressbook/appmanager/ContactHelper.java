@@ -25,4 +25,23 @@ public class ContactHelper extends HelperBase {
   public void addNewContact() {
     click(By.linkText("add new"));
   }
+
+  public void selectContact() {
+    click(By.name("selected[]"));
+  }
+
+  public void deleteSelectedContacts() {
+    click((By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Select all'])[1]/following::input[2]")));
+  }
+
+  public void confirmDeletedContacts() {
+    wd.switchTo().alert().accept();
+  }
+
+  public void editContact() {
+    click(By.cssSelector("img[alt=\"Edit\"]"));
+  }
+  public void confirmEditContact() {
+    click((By.cssSelector("input[name=\"update\"]")));
+  }
 }

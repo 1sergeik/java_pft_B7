@@ -28,7 +28,7 @@ public class GroupHelper extends HelperBase {
 
 
 
-  public void deletSelectedGroups() {
+  public void deleteSelectedGroups() {
     click(By.name("delete"));
   }
 
